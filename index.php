@@ -1,1 +1,1 @@
-<?php header("Location: http://localhost:8080/stupid-story"); ?>
+<?php header("Location: https://stupid-story.herokuapp.com/stupid-story"); ?>
