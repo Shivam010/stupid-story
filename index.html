@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="A Stupid Story !!">
+    <meta property="og:description" content="Some Stupid Subtitle…">
+    <title>Stupid Story</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Georgia:400,700|Lora|Playfair+Display:700i,900");
+
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+        }
+
+        h1,
+        h2,
+        p,
+        i,
+        a,
+        .authorName a {
+            color: rgba(0, 0, 0, 0.84);
+            text-rendering: optimizeLegibility;
+        }
+
+        h1 {
+            font-family: "Georgia", serif;
+            font-size: 48px;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-family: "Georgia", sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            padding: 0;
+            margin: 56px 0 -13px -1.883px;
+            text-align: left;
+            line-height: 34.5px;
+            letter-spacing: -0.45px;
+        }
+
+        p,
+        i,
+        a {
+            margin-top: 21px;
+            font-size: 21px;
+            letter-spacing: -0.03px;
+            line-height: 1.58;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        blockquote {
+            font-family: "Georgia", serif;
+            font-size: 30px;
+            font-style: italic;
+            letter-spacing: -0.36px;
+            line-height: 44.4px;
+            overflow-wrap: break-word;
+            margin: 55px 0 55px 0;
+            /* text-align: center; */
+            color: rgba(0, 0, 0, 0.68);
+            padding: 0 0 0 50px;
+        }
+
+        code {
+            font-size: 18px;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 2px;
+            padding: 3px 5px;
+        }
+
+        .subtitle, .entry-date {
+            font-family: "Georgia", sans-serif;
+            color: rgba(0, 0, 0, 0.54);
+            margin: 0;
+        }
+
+        .entry-date {
+            font-size: 18px;
+            margin: 0 0 30px 0;
+        }
+
+        /* ##################################################################################
+        ########################################  LAYOUT  ###################################
+        ##################################################################################### */
+
+        .container {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-columns: auto 166px 740px 166px auto;
+            grid-template-columns: auto 166px 740px 166px auto;
+            -ms-grid-rows: 450px auto 150px;
+            grid-template-rows: 450px auto 150px;
+            grid-template-areas: ". . article . ." ". . footer . .";
+        }
+
+        .info {
+            -ms-grid-row: 0;
+            -ms-grid-column: 0;
+            grid-area: info;
+            padding: 60px 60px 0 0;
+            margin-bottom: 30px;
+        }
+
+        .article {
+            -ms-grid-row: 0;
+            -ms-grid-column: 2;
+            grid-area: article;
+            margin: 40px 10px;
+        }
+
+        @media screen and (max-width: 1072px) {
+            .container {
+                -ms-grid-columns: auto 740px auto;
+                grid-template-columns: auto 740px auto;
+                grid-template-areas: ". article ." ". footer  .";
+            }
+
+            .article {
+                -ms-grid-row: 2;
+                -ms-grid-column: 2;
+            }
+        }
+
+        @media screen and (max-width: 740px) {
+            .container {
+                -ms-grid-rows: auto auto 150px;
+                grid-template-rows: auto auto 150px;
+                -ms-grid-columns: auto;
+                grid-template-columns: auto;
+                grid-template-areas: "article";
+            }
+
+            .info {
+                padding-top: 0;
+                -ms-grid-row: 1;
+                -ms-grid-column: 1;
+            }
+
+            .article {
+                -ms-grid-row: 2;
+                -ms-grid-column: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <main class="article">
+        <div class="info">
+            <h1>Stupid Story !!</h1>
+            <p class="subtitle">Some Stupid Subtitle…</p>
+            <div class="entry-meta"><a class="entry-date published ">February 15, 2018</a></div>
+        </div>
+        <p>
+            The Stupid story starts here !!
+        </p>
+        <blockquote>Stupid quote !!</blockquote>
+        <p>
+            The Stupid story ends here !!
+        </p>
+        <p>
+            Thank You<br/>
+            <i><b>Shivam010</b></i>
+        </p>
+    </main>
+</div>
+
+</body>
+</html>
