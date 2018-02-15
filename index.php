@@ -1,1 +1,1 @@
-<?php include_once("index.html"); ?>
+<?php header("Location: http://localhost:8080/stupid-story"); ?>
