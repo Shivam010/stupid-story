@@ -6,4 +6,3 @@ The Stupid story starts and ends with a `Stupid Quote` in it.
 
 Thank You<br>
 **_Shivam010_**
-
